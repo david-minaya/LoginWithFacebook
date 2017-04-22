@@ -31,7 +31,7 @@ import java.util.zip.Inflater;
 //https://developers.facebook.com/docs/facebook-login/permissions#reference-user_friends (Permisos para acceder a los datos del usuario)
 //https://developers.facebook.com/docs/reference/android/current/interface/GraphRequest.GraphJSONArrayCallback/ (Documentacion api Graph)
 
-//Prueba de comint v2.0.1.0
+//Prueba de comint v1.0
 
 public class MainActivity extends AppCompatActivity {
 
