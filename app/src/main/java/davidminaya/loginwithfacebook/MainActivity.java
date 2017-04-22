@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String a = "prueba";
+
         if (AccessToken.getCurrentAccessToken() == null){
 
             login();
