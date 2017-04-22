@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginWithFacebook</string>
+
+    <!--Clave Facebook-->
+    <string name="facebook_app_id">416687878699990</string>
+    <string name="fb_login_protocol_scheme">fb416687878699990</string>
+
+    <string name="id_banner">ca-app-pub-4302504334301946/3961857916</string>
+
+
+</resources>

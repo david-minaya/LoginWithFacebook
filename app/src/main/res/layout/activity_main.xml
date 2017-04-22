@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="davidminaya.loginwithfacebook.MainActivity">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--Foto de portada-->
+                <com.facebook.login.widget.ProfilePictureView
+                    android:id="@+id/iv_foto_de_portada"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"/>
+
+                <!--Foto de perfil-->
+                <com.facebook.login.widget.ProfilePictureView
+                    android:id="@+id/iv_foto_de_perfil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <!--Nombre-->
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:typeface="serif"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/cardView2"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <!--Fecha de nacimiento-->
+                <TextView
+                    android:id="@+id/tv_fecha_de_nacimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:layout_marginTop="12dp"
+                    android:typeface="serif"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de nacimiento v2.0"
+                    android:layout_below="@+id/tv_fecha_de_nacimiento"
+                    android:textSize="12dp"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="2dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#6e6e6e"/>
+
+                <!--Sexo-->
+                <TextView
+                    android:id="@+id/tv_sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:typeface="serif"
+                    android:layout_toRightOf="@+id/view"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo"
+                    android:textSize="12dp"
+                    android:layout_toRightOf="@+id/view"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tv_sexo"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/cardView3"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <!--Localidad-->
+                <TextView
+                    android:id="@+id/tv_localidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="localidad"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:layout_marginTop="7dp"
+                    android:typeface="serif"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localidad"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/tv_localidad"/>
+
+                <!--Zona horaria-->
+                <TextView
+                    android:id="@+id/tv_zona_horaria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zona horaria"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:typeface="serif"
+                    android:layout_above="@+id/textView"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zona horaria"
+                    android:textSize="12dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="2dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#6e6e6e"/>
+
+                <!--Idioma-->
+                <TextView
+                    android:id="@+id/tv_idioma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Idioma"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:typeface="serif"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/view2"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Idioma"
+                    android:textSize="13dp"
+                    android:layout_toRightOf="@+id/view2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tv_idioma"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_below="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <!--Email-->
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--Boton de abrir Facebook-->
+                <Button
+                    android:id="@+id/b_abrir_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4052b5"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Ver perfil en Facebook"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
