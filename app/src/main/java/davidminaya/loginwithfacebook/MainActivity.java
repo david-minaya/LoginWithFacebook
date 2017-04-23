@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //______________________________________________________________________________________________
-    // METODOS DE MOSTRAR DATOS EN LA IU
+    // METODOS DE MOSTRAR DATOS EN LA IU.
 
     public void actualizar(View view){
 
