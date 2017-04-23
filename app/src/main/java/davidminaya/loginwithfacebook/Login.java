@@ -2,16 +2,15 @@ package davidminaya.loginwithfacebook;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.Profile;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -25,16 +24,24 @@ public class Login extends AppCompatActivity {
 
     CallbackManager callbackManager;
 
+    // _____________________________________________________________________________________________
+    // Metodos que administran el ciclo de vida de la actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+
+        //------------------------------------------------------------------------------------------
+        // Anuncio de Google de tipo banner
 
         adView = (AdView) findViewById(R.id.ad_view);
 
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
         adView.loadAd(adRequest);
+
+        //------------------------------------------------------------------------------------------
+        // Login con Facebook
 
         LoginButton loginButton = (LoginButton)findViewById(R.id.b_login);
 
@@ -66,6 +73,8 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        //------------------------------------------------------------------------------------------
+
     }
 
     @Override
@@ -92,6 +101,8 @@ public class Login extends AppCompatActivity {
         super.onDestroy();
     }
 
+    // _____________________________________________________________________________________________
+    // Login con Facebook
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

@@ -9,37 +9,43 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.facebook.AccessToken;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
-import com.facebook.HttpMethod;
 import com.facebook.Profile;
 import com.facebook.login.LoginManager;
 import com.facebook.login.widget.ProfilePictureView;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.zip.Inflater;
 
-//https://developers.facebook.com/docs/graph-api/reference/user/ (datos que se pueden obtener del usuario)
-//https://developers.facebook.com/docs/facebook-login/permissions#reference-user_friends (Permisos para acceder a los datos del usuario)
-//https://developers.facebook.com/docs/reference/android/current/interface/GraphRequest.GraphJSONArrayCallback/ (Documentacion api Graph)
-
-//Prueba de comint v1.0
-//Prueba de comint v2.0
+/**
+ * Enlaces importantes para la correcta implementacion del
+ * login en Facebook y la obtencion de datos del usuarios.
+ *
+ * -Datos que podemos obtener del usuario:
+ *  https://developers.facebook.com/docs/graph-api/reference/user/
+ *
+ * -Permisos necesarios para obtener los datos del usuario:
+ *  https://developers.facebook.com/docs/facebook-login/permissions#reference-user_friends
+ *
+ * -Documentacion de la api Graph. En esta documentacion se
+ *  explica como implementar el login, la obtencion de datos
+ *  y muchas mas funciones:
+ *  https://developers.facebook.com/docs/reference/android/current/interface/GraphRequest.GraphJSONArrayCallback/
+ * */
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         String a = "prueba";
 
@@ -55,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     //______________________________________________________________________________________________
     // MENU DE OPCIONES
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
