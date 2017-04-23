@@ -22,22 +22,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-/**
- * Enlaces importantes para la correcta implementacion del
- * login en Facebook y la obtencion de datos del usuarios.
- *
- * -Datos que podemos obtener del usuario:
- *  https://developers.facebook.com/docs/graph-api/reference/user/
- *
- * -Permisos necesarios para obtener los datos del usuario:
- *  https://developers.facebook.com/docs/facebook-login/permissions#reference-user_friends
- *
- * -Documentacion de la api Graph. En esta documentacion se
- *  explica como implementar el login, la obtencion de datos
- *  y muchas mas funciones:
- *  https://developers.facebook.com/docs/reference/android/current/interface/GraphRequest.GraphJSONArrayCallback/
- * */
-
 public class MainActivity extends AppCompatActivity {
 
 
